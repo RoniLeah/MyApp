@@ -1,0 +1,33 @@
+{
+  "cli": {
+    "version": ">=7.0.0",
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "production": {
+      "distribution": "store",
+      "env": {},
+      "android": {
+        "credentialsSource": "local"
+      },
+      "autoIncrement": true
+    }
+  },
+  "submit": {
+    "production": {
+      "ios": {
+        "ascAppId": "6751516771",
+        "ascApiKeyPath": "./apple.p8",
+        "ascApiKeyId": "QMNQ2Y2VGA",
+        "ascApiKeyIssuerId": "9988448a-956a-45c9-8eed-0c50cf139042",
+        "appleTeamId": "2852W8AP24"
+      },
+      "android": {
+        "track": "internal",
+        "serviceAccountKeyPath": "./google.json",
+        "changesNotSentForReview": true,
+        "releaseStatus": "draft"
+      }
+    }
+  }
+}

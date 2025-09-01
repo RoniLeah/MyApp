@@ -1,0 +1,58 @@
+{
+  "expo": {
+    "name": "StudioForgeAI",
+    "slug": "soundforgeai",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "music-create-customize",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": false,
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "StudioForgeAI needs microphone access to record audio for music creation",
+        "NSCameraUsageDescription": "StudioForgeAI needs camera access for video recording features",
+        "NSPhotoLibraryUsageDescription": "StudioForgeAI needs photo library access to save and share your creations"
+      },
+      "bundleIdentifier": "\t com.musiccreator.studioforgeai"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true,
+      "package": "\t com.musiccreator.studioforgeai"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "runtimeVersion": {
+      "policy": "sdkVersion"
+    },
+    "owner": "ronileah",
+    "extra": {
+      "eas": {
+        "projectId": "28113c97-ae91-406f-86ae-a31e7f7c88db"
+      }
+    }
+  }
+}

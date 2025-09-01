@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>StudioForgeAI Safari Extension</title>
+    <style>
+        body {
+            width: 320px;
+            min-height: 400px;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        .container {
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        .subtitle {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+        .feature-list {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+        .feature-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+            font-size: 14px;
+        }
+        .feature-list li:before {
+            content: "🎵 ";
+            margin-right: 8px;
+        }
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            border-radius: 25px;
+            border: 1px solid rgba(255,255,255,0.3);
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        .btn:hover {
+            background: rgba(255,255,255,0.3);
+            transform: translateY(-1px);
+        }
+        .btn-primary {
+            background: rgba(255,255,255,0.9);
+            color: #667eea;
+            font-weight: bold;
+        }
+        .footer {
+            text-align: center;
+            font-size: 12px;
+            opacity: 0.8;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">StudioForgeAI</div>
+            <div class="subtitle">Safari Extension for iOS/macOS</div>
+        </div>
+        
+        <ul class="feature-list">
+            <li>Detect audio on web pages</li>
+            <li>AI-powered music analysis</li>
+            <li>Seamless app integration</li>
+            <li>Cross-platform sync</li>
+        </ul>
+        
+        <a href="#" id="openApp" class="btn btn-primary">📱 Open iOS/macOS App</a>
+        <a href="#" id="analyzeAudio" class="btn">🎵 Analyze Current Page</a>
+        <a href="https://github.com/your-username/studioforgeai-ios" target="_blank" class="btn">📂 View Repository</a>
+        
+        <div class="footer">
+            Version 1.0.0 • Built for Safari
+        </div>
+    </div>
+    
+    <script src="popup.js"></script>
+</body>
+</html>
